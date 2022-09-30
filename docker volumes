@@ -1,0 +1,37 @@
+  yum install docker -y
+    2  docker --version
+    3  yum update
+    4  docker ps
+    5  systemctl start docker
+    6  service docker status
+    7  docker ps
+    8  docker images
+    9  docker run -itd --name s1 -p 40:50 -v sam:/var/lib centos
+   10  docker ps
+   11  docker attach s1
+   12  cd /var/lib/docker/volumes
+   13  ls
+   14  cd sam
+   15  ls
+   16  cd _data
+   17  ls
+   18  cd dell
+   19  ls
+   20  cat gopi
+   21  cd 
+   22  docker rm -f s1
+   23  cd /var/lib/docker/volumes
+   24  ls
+   25  cd sam
+   26  ls
+   27  cd _data
+   28  ls
+   29  cd d3ell
+   30  cd dell
+   31  ls
+   32  cat gopi
+   33  cd
+   34  docker run -itd --name=s2 -p 60:70 -v sam:/var/lib ubuntu
+   35  docker attach s2
+   36  docker ps
+   37  history
